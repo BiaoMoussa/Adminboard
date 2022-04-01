@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posts</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/bb69e74125.js" crossorigin="anonymous"></script>
+
+  <!--ck editor-->
+  <script src="//cdn.ckeditor.com/4.17.2/standard/ckeditor.js"></script>
+  <script src="ckeditor/ckeditor.js"></script>
+</head>
+<body>
+    <header>
+        
+            <nav class="navbar navbar-expand-lg navbar-light bg-dark ">
+                  <div class="container">
+                    <a class="navbar-brand text-light" href="index.html"><strong>AdminBoard</strong></a>
+                    <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="collapsibleNavId">
+                        <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                            <li class="nav-item active">
+                                <a class="nav-link text-light" href="index.html">Dashboard <span class="visually-hidden">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="posts.html">Posts</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="categories.html">Catégories</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="users.html">Utilisateurs</a>
+                            </li>
+                            <li class="nav-item dropdown  ps-5">
+                                <a class="nav-link dropdown-toggle text-light ps-5" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user" aria-hidden="true"></i> Bienvenue Biao</a>
+                                <div class="dropdown-menu bg-dark" aria-labelledby="dropdownId">
+                                    <a class="dropdown-item text-light" href="profile.html"><i class="fa fa-user-circle-o" aria-hidden="true"></i> Profile</a>
+                                    <a class="dropdown-item text-light" href="paramètre.html"><i class="fa fa-gear" aria-hidden="true"></i> Paramètres</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="adminBoard.html"><i class="fa fa-user-times" aria-hidden="true"></i> Logout</a>
+                            </li>
+                        </ul>
+                    </div>
+              </div>
+            </nav>
+            
+    </header>
+    <main>
+        <!--Dashboard-->
+        <section class="bg-success py-1">
+            <div class="container">
+                <div class="row text-light">
+                    <span><h1> <i class="fa fa-folder" aria-hidden="true"></i> Categories</h1></span>
+                </div>
+            </div>
+        </section>
+        <!-- section pour les 3 boutons-->
+        <section class="bg-light">
+            <div class="container">
+                <div class="row g-2  py-2 justify-content-end">
+                    <div class="mb-3 col-4">
+                      <input type="text" class="form-control" name="" id="" aria-describedby="helpId" placeholder="Search">
+                    </div>
+                    <div class="col-4 col-md-2  ">
+                        <button type="submit" class="btn btn-success w-100">Search</button>
+                    </div>
+                   
+                </div>
+            </div>
+        </section>
+       <section>
+            <div class="container">
+                <div class="row pt-5 justify-content-center ">
+                    <div class="col-12 col-md-12">
+                        <div class="card my-5">
+                            <div class="card-header">
+                                <h3>Categories</h3>
+                            </div>
+                            <div class="card-body justify-content-center">
+                                <table class="table-responsive w-100 table-striped">
+                                    <thead class="bg-dark text-light">
+                                        <tr>
+                                            <th>#</th>
+                                            <th>Titre</th>
+                                            <th>Date du Post</th>
+                                            
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td scope="row">1</td>
+                                
+                                            <td>Web Development</td>
+                                            <td>October 12,2019</td>
+                                            
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">2</td>
+                                           
+                                            <td>Tech Gadgets</td>
+                                            <td>October 13,2019</td>
+                                            
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">3</td>
+                                           
+                                            <td>Web Development</td>
+                                            <td>October 12,2019</td>
+                                            
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">4</td>
+                                            
+                                            <td>Business</td>
+                                            <td>October 15,2019</td>
+                                            
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">5</td>
+                                        
+                                            <td>Web Development</td>
+                                            <td>October 12,2019</td>
+                                            
+                                        </tr>
+                                        
+                                    </tbody>
+                                    
+                                </table>
+                                <div class="btn-group mt-3">
+                                    <a href="#" class="btn btn-light active border border-primary text-primary hover" aria-current="page">Previous</a>
+                                    <a href="#" class="btn btn-light border text-primary">1</a>
+                                    <a href="#" class="btn btn-light border text-primary">2</a>
+                                    <a href="#" class="btn btn-light border text-primary">3</a>
+                                    <a href="#" class="btn btn-light border text-primary">Next</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+  <footer>
+    <div class="container-fluid bg-secondary py-5 ">
+        <div class="row text-center text-light">
+            <span>Copyright <i class="fa fa-copyright" aria-hidden="true"></i> 2019 adminBoard</span>
+        </div>
+  </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+            </script>
+    <script>
+      var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+        return new bootstrap.Tooltip(tooltipTriggerEl)
+      })
+    </script>
+  </footer>  
+</body>
+</html>
